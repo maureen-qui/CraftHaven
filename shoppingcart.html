@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Handmade Haven</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+
+        header {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        section {
+            padding: 2rem;
+        }
+
+        h1 {
+            color: #343a40;
+        }
+
+        .cart-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .cart-item {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #ced4da;
+            padding: 1rem;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .cart-item:last-child {
+            border-bottom: none;
+        }
+
+        .cart-item:hover {
+            transform: scale(1.02);
+        }
+
+        .item-image {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            margin-right: 1rem;
+        }
+
+        .item-details {
+            flex-grow: 1;
+        }
+
+        .item-title {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .item-price {
+            font-weight: bold;
+            color: #343a40;
+        }
+
+        .cart-total {
+            text-align: right;
+            padding: 1rem;
+            font-weight: bold;
+        }
+
+        .checkout-button {
+            background-color: #343a40;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .checkout-button:hover {
+            background-color: #555b60;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Shopping Cart - Handmade Haven</h1>
+    </header>
+
+    <section>
+        <div class="cart-container">
+            <!-- Cart Item 1 -->
+            <div class="cart-item">
+                <img class="item-image" src="product1.jpg" alt="Product 1">
+                <div class="item-details">
+                    <div class="item-title">Handcrafted Ceramic Mug</div>
+                    <div class="item-price">$15.99</div>
+                </div>
+            </div>
+
+            <!-- Cart Item 2 -->
+            <div class="cart-item">
+                <img class="item-image" src="product2.jpg" alt="Product 2">
+                <div class="item-details">
+                    <div class="item-title">Artisan Leather Wallet</div>
+                    <div class="item-price">$29.99</div>
+                </div>
+            </div>
+
+            <!-- Add more cart items as needed -->
+
+            <div class="cart-total">Total: $45.98</div>
+            <button class="checkout-button">Proceed to Checkout</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Handmade Haven. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

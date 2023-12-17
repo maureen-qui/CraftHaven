@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handmade Haven - Blog</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+
+        header {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        section {
+            padding: 2rem;
+        }
+
+        h1 {
+            color: #343a40;
+        }
+
+        .blog-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .blog-post {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .blog-post:hover {
+            transform: scale(1.02);
+        }
+
+        .blog-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .blog-details {
+            padding: 1rem;
+        }
+
+        .blog-title {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .blog-content {
+            color: #6c757d;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Handmade Haven - Blog</h1>
+    </header>
+
+    <section>
+        <div class="blog-container">
+            <!-- Blog Post 1 -->
+            <div class="blog-post">
+                <img class="blog-image" src="blog1.jpg" alt="Blog 1">
+                <div class="blog-details">
+                    <div class="blog-title">The Art of Handmade Pottery</div>
+                    <div class="blog-content">Explore the intricate details and craftsmanship behind handmade pottery.</div>
+                </div>
+            </div>
+
+            <!-- Blog Post 2 -->
+            <div class="blog-post">
+                <img class="blog-image" src="blog2.jpg" alt="Blog 2">
+                <div class="blog-details">
+                    <div class="blog-title">Crafting Leather Goods with Passion</div>
+                    <div class="blog-content">Discover the process of creating timeless leather goods by skilled artisans.</div>
+                </div>
+            </div>
+
+            <!-- Add more blog posts as needed -->
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Handmade Haven. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

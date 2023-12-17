@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artisan Profiles - Handmade Haven</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+
+        header {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        section {
+            padding: 2rem;
+        }
+
+        h1 {
+            color: #343a40;
+        }
+
+        .artisan-profiles-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .artisan-profile {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .artisan-profile:hover {
+            transform: scale(1.02);
+        }
+
+        .artisan-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .artisan-details {
+            padding: 1rem;
+        }
+
+        .artisan-name {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .artisan-description {
+            color: #6c757d;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Artisan Profiles - Handmade Haven</h1>
+    </header>
+
+    <section>
+        <div class="artisan-profiles-container">
+            <!-- Artisan Profile 1 -->
+            <div class="artisan-profile">
+                <img class="artisan-image" src="artisan1.jpg" alt="Artisan 1">
+                <div class="artisan-details">
+                    <div class="artisan-name">John Doe</div>
+                    <div class="artisan-description">Crafting unique pottery pieces with love and precision.</div>
+                </div>
+            </div>
+
+            <!-- Artisan Profile 2 -->
+            <div class="artisan-profile">
+                <img class="artisan-image" src="artisan2.jpg" alt="Artisan 2">
+                <div class="artisan-details">
+                    <div class="artisan-name">Jane Smith</div>
+                    <div class="artisan-description">Creating hand-stitched leather goods that last a lifetime.</div>
+                </div>
+            </div>
+
+            <!-- Add more artisan profiles as needed -->
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Handmade Haven. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
